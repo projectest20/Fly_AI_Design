@@ -203,10 +203,6 @@
             const loader = new OBJLoader();
             var objFileURL = "https://flyaid7.blob.core.windows.net/flyd7/D7.obj";
             console.log(objFileURL);
-            fetch(objFileURL, { mode: "cors" })
-            .then(response => response.blob())
-            .then(blob => {
-                const url = URL.createObjectURL(blob);
                 loader.load(
                 objFileURL, // Adjust path to your model
                 function (obj) {
@@ -265,12 +261,6 @@
                     console.error(error);
                 }
             );
-            })
-            .catch(error => console.error("Error loading OBJ:", error));
-
-
-            
-
             // Initialize mouse interaction for rotation and zoom
             document.addEventListener('mousedown', onMouseDown);
             document.addEventListener('mousemove', onMouseMove);
