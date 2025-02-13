@@ -47,8 +47,6 @@ def results_page(request):
             'envelope': envelope,
             'autonomy': autonomy,
             'safety': safety,
-            'obj_file_url': '/static/drone_custom.obj',  # Path to your .obj file
-
             'obj_file_url': '/static/D7.obj',  # Path to your .obj file
         }
 
