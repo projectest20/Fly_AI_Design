@@ -199,14 +199,15 @@
             scene.add(light);
 
             // Load OBJ model
+            //document.getElementById('objFileURL')
             const loader = new OBJLoader();
-            var objFileURL = document.getElementById('objFileURL');
+            var objFileURL = https://flyaid7.blob.core.windows.net/flyd7/D7.obj;
             console.log(objFileURL.innerText);
 
 
 
             loader.load(
-                https://flyaid7.blob.core.windows.net/flyd7/D7.obj, // Adjust path to your model
+                objFileURL.innerText, // Adjust path to your model
                 function (obj) {
                     objectToRotate = obj;
                     scene.add(obj);
