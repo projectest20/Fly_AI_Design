@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 asgiref==3.8.1
 Django==4.2.19
 sqlparse==0.5.3
 tzdata==2025.1
 whitenoise==6.7
-=======
-asgiref==3.8.1
-Django==5.1.6
-sqlparse==0.5.3
-tzdata==2025.1
-whitenoise==6.9.0
->>>>>>> 8014c4d (Initial commit with all project files and Git LFS tracking)
+
+
