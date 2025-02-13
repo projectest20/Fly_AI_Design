@@ -199,9 +199,9 @@
             scene.add(light);
 
             // Load OBJ model
-            //document.getElementById('objFileURL')
+            //"https://flyaid7.blob.core.windows.net/flyd7/D7.obj"
             const loader = new OBJLoader();
-            var objFileURL = "https://flyaid7.blob.core.windows.net/flyd7/D7.obj";
+            var objFileURL =document.getElementById('objFileURL') ;
             console.log(objFileURL);
                 loader.load(
                 objFileURL, // Adjust path to your model
